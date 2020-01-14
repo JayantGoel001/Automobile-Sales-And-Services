@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    -webkit-animation: colorchange 15s infinite; 
+    animation: colorchange 15s infinite;
+}
+@-webkit-keyframes colorchange {
+     0%  {background: RED;}
+    25%  {background: Green;}
+    50%  {background: Yellow;}
+    75%  {background: Cyan;}
+    100% {background: Blue;}
+}
+@keyframes colorchange {
+     0%  {background: Red;}
+    25%  {background: Green;}
+    50%  {background: Yellow;}
+    75%  {background: Cyan;}
+    100% {background: Blue;}
+}  
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #48d1cc;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px
+    rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content
+a:hover{background-color:#f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+<ul>
+
+<li><a href="navigation.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li class="dropdown">
+
+<a href="#"class="dropbtn">Dropdown</a>
+
+    <div class="dropdown-content">
+      <a href="accordian.html">Cars</a>
+      <a href="bikeinfo.html">Bikes</a>
+      <a href="carbikename.html">Search and Buy</a>
+	  <a href="Service.html">Service</a>
+    </div>
+
+  </li>
+
+</ul>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+
+button.accordion.active,
+button.accordion:hover {
+
+    background-color: #ddd;
+}
+
+
+button.accordion:after {
+
+/* Unicode character for "plus" sign
+(+) is '\02795' */ 
+
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+
+button.accordion.active:after {
+
+/* Unicode character for "minus" sign
+(-) is '\2796' */ 
+
+    content: "\2796";
+}
+
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Bikes Model</h2>
+
+<p>HERE IS THE DESCRIPTION OF BIKES</p>
+
+
+<button class="accordion">Royal Enfield Classic 500
+</button>
+
+<div class="panel">
+
+<p>The Classic 500 comes with a fuel injected 499cc engine which offers superior performance to the Classic 350 in the form of 27.2 bhp of power and 41.3 Nm of torque. The bike is priced at Rs. 1.62 lakh for the base version. Although the bike is visually similar to the Classic 350, there are minor differences such as the amp-meter is replaced with a low fuel light and EFI malfunction indicator light. The bike is available in five coloursRoyal Enfield has updated the Classic 500 with a dual-channel ABS unit. It is now been priced at Rs 2.02 lakh (ex-showroom Mumbai), a hike of around Rs 15,000 compared to the non-ABS variant. Other than the safety feature, the motorcycle remains unchanged both mechanically and cosmetically.
+</p>
+
+</div>
+
+<button class="accordion">BMW R 1250 RT</button>
+<div class="panel">
+
+<p>Improving on an iconic motorcycle is always a difficult task. Typically, the goal is to better the breed, while not losing touch with what makes the long-running motorcycle desirable. BMW tackled the job of updating the RT with caution. Rather than giving the RT a major makeover, BMW focused on updating the powerplant, and with good results. The 2019 BMW R 1250 RT is a bigger improvement when you’re in the saddle than it is on paper, and that is exactly how we like it.
+</p>
+
+</div>
+
+<button class="accordion">Harley Davidson Fat Boy
+</button>
+<div class="panel">
+
+<p>Powered by an all-new 1745cc Milwaukee-Eight 107, air-cooled, V-twin motor, the 2018 Fat Boy makes 144Nm at just 3000rpm. It gets a 6-speed transmission with tall gear ratios. Refinement levels are far improved than its predecessor, but the 6-speed gearbox still feels clunky. Fuel tank capacity of 19.1 litres is the same as the Heritage Classic, with the bike weighing 322kg in running order. The chassis is from the all-new Softail lineup and is lighter and more rigid. 
+</p>
+
+</div>
+<button class="accordion">Honda CB650R
+</button>
+
+<div class="panel">
+
+<p>Honda has officially started accepting bookings for the new 2019 Honda CBR650R. This 650cc faired sports bike is expected to launch in India in the next couple of months and will replace the ageing CBR650F here. According to Honda, the new bike will be priced below the Rs 8 lakh mark (ex-showroom) and the new bike can be booked from any of Honda's 22 'Wing Word' dealerships across India by paying a token amount of Rs 15,000. 
+The new Honda CBR650R gets a complete makeover and looks like a smaller version of Honda’s flagship litre-class superbike, the CBR1000RR. Features include new twin LED headlamps and a fully-digital instrument console that replaces the dated twin-pod digital instrument cluster seen on the CBR650F. 
+The 649cc, liquid-cooled, inline-four engine has been updated for translates a stronger mid-range and a higher revving motor. It now makes 95PS at 12,000rpm and 64Nm at 8500rpm. You now get a slipper clutch. Electronics include multi-stage traction control. 
+The new bike weighs 6kg less thanks to a lighter frame and smaller fuel tank. Suspension updates include Showa Separate Function upside-down front forks and a preload-adjustable rear monoshock. Its 310mm twin front discs get new radially mounted Nissin four-pot calipers while the rear gets a larger 240mm disc. 
+The CBR650F does not have any direct competitors here and the only one that comes close is the Kawasaki Ninja 650 that is priced at Rs 5.49 lakh (ex-showroom).
+</p>
+
+</div>
+
+<button class="accordion">TVS Apache RR 310
+</button>
+
+<div class="panel">
+
+<p>The Apache RR 310 looks striking with its track focussed design and on the road looks more like a 600cc motorcycle. It's offered in three different paint schemes - matte black, gloss black and gloss red. Fit and finish and switchgear quality is top notch. Despite its sporty design, it has fairly comfortable ergonomics. Coupled with the torquey and tractable motor, riding the RR 310 is an effortless affair. Ride quality despite being set on the stiffer side is plush. Headlamp focus is good but could have done well with a wider spread. Mirrors offer fantastic visibility. It handles quite well and feels light-footed in the city. Brakes lack initial feel but offer good bite. Tyres grip well in dry conditions. The downsides are vibrations, especially around the 6000rpm range. TVS have been working to reduce them, the latest improvement being the addition of new, larger bar-end weights.
+</p>
+
+</div>
+
+
+<script>
+
+var acc = document.getElementsByClassName("accordion");
+
+var i;
+
+for (i = 0; i < acc.length; i++) {
+ acc[i].onclick = function(){
+  this.classList.toggle("active");
+  this.nextElementSibling.classList.toggle("show");
+  }
+}
+
+</script>
+
+</body>
+</html>
+

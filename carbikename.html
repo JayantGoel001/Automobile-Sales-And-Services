@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    -webkit-animation: colorchange 15s infinite; 
+    animation: colorchange 15s infinite;
+}
+@-webkit-keyframes colorchange {
+     0%  {background: RED;}
+    25%  {background: Green;}
+    50%  {background: Yellow;}
+    75%  {background: Cyan;}
+    100% {background: Blue;}
+}
+@keyframes colorchange {
+     0%  {background: Red;}
+    25%  {background: Green;}
+    50%  {background: Yellow;}
+    75%  {background: Cyan;}
+    100% {background: Blue;}
+}  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #48d1cc;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px
+    rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content
+a:hover{background-color:#f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+<ul>
+
+<li><a href="navigation.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li class="dropdown">
+
+<a href="#"class="dropbtn">Dropdown</a>
+
+    <div class="dropdown-content">
+      <a href="accordian.html">Cars</a>
+      <a href="bikeinfo.html">Bikes</a>
+      <a href="carbikename.html">Search and Buy</a>
+	  <a href="Service.html">Service</a>
+    </div>
+
+  </li>
+
+</ul>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+#myInput {
+  background-image:
+  url('/img/search.png');
+
+  background-position: 5px 10px;
+  background-size:40px;
+  background-repeat: no-repeat;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+
+#myTable tr.header, #myTable tr:hover{
+  background-color: #f1f1f1;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>CAR AND BIKES</h2>
+
+
+<table id="myTable">
+<tr class="header">
+<th style="width:40%;">Model Name</th>
+<th style="width:30%;">Company</th>
+<th style="width:20%;">Price</th>
+<th style="width:10%;">Purchase</th>
+
+</tr>
+
+  <tr>
+    <td>Ferrari Portofino</td>
+    <td>Ferrari</td>
+<td>Rs 4.09 Crore</td>
+<td><form><input type="button" onclick="window.location.href='buy.html'" name="BUY" value="BUY"></form></td>
+
+  </tr>
+
+  <tr>
+    <td>BMW Z4</td>
+    <td>BMW</td>
+<td>Rs 76.83 - 93.35 Lakh</td>
+<td><form><input type="button" onclick="window.location.href='buy.html'" name="BUY" value="BUY"></form></td>
+
+  </tr>
+
+  <tr>
+    <td>Lamborghini Aventador</td>
+    <td>Lamborghini</td>
+<td>Rs 5.65 - 6.28 Crore</td>
+<td><form><input type="button" onclick="window.location.href='buy.html'" name="BUY" value="BUY"></form></td>
+
+  </tr>
+
+  <tr>
+    <td>MG Hector</td>
+    <td>SAIC</td>
+<td>Rs 12.18 lakh</td>
+<td><form><input type="button" onclick="window.location.href='buy.html'" name="BUY" value="BUY"></form></td>
+
+  </tr>
+
+  <tr>
+    <td>Jaguar XJ</td>
+    <td>Jaguar</td>
+<td>Rs 1.31 Crore</td>
+<td><form><input type="button" onclick="window.location.href='buy.html'" name="BUY" value="BUY"></form></td>
+
+  </tr>
+
+  <tr>
+    <td>Royal Enfield Classic 500</td>
+    <td>Royal Enfield</td>
+<td>Rs 2.02 - 2.17 lakh</td>
+<td><form><input type="button" onclick="window.location.href='buy.html'" name="BUY" value="BUY"></form></td>
+
+  </tr>
+
+  <tr>
+    <td>BMW R 1250 RT</td>
+    <td>BMW</td>
+<td>Rs 18.00 lakh
+</td>
+<td><form><input type="button" onclick="window.location.href='buy.html'" name="BUY" value="BUY"></form></td>
+
+  </tr>
+
+  <tr>
+    <td>Harley Davidson Fat Boy</td>
+    <td>Harley Davidson</td>
+<td>Rs 18.19 lakh</td>
+<td><form><input type="button" onclick="window.location.href='buy.html'" name="BUY" value="BUY"></form></td>
+
+  </tr>
+
+  <tr>
+    <td>Honda CB650R</td>
+    <td>Honda</td>
+<td>Rs 7.50 lakh</td>
+<td><form><input type="button" onclick="window.location.href='buy.html'" name="BUY" value="BUY"></form></td>
+
+  </tr>
+<tr>
+    <td>TVS Apache RR 310</td>
+    <td>TVS</td>
+<td>Rs 2.27 lakh</td>
+<td><form><input type="button" onclick="window.location.href='buy.html'" name="BUY" value="BUY"></form></td>
+
+  </tr>
+
+
+</table>
+
+<script>
+
+function myFunction() {
+var input, filter, table, tr, td, i;
+input=document.getElementById("myInput");
+
+filter=input.value.toUpperCase();
+
+table=document.getElementById("myTable");
+
+tr=table.getElementsByTagName("tr");
+
+for (i = 0; i < tr.length; i++) {
+td = tr[i].getElementsByTagName("td")[0];
+
+ if (td) {
+   if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+
+     tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+
+      }
+    }
+  }
+}
+
+</script>
+
+</body>
+</html>

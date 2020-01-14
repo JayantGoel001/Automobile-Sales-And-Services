@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    -webkit-animation: colorchange 15s infinite; 
+    animation: colorchange 15s infinite;
+}
+@-webkit-keyframes colorchange {
+     0%  {background: RED;}
+    25%  {background: Green;}
+    50%  {background: Yellow;}
+    75%  {background: Cyan;}
+    100% {background: Blue;}
+}
+@keyframes colorchange {
+     0%  {background: Red;}
+    25%  {background: Green;}
+    50%  {background: Yellow;}
+    75%  {background: Cyan;}
+    100% {background: Blue;}
+}  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #48d1cc;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px
+    rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content
+a:hover{background-color:#f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+
+<body>
+<ul>
+
+<li><a href="navigation.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li class="dropdown">
+
+<a href="#"class="dropbtn">Dropdown</a>
+
+    <div class="dropdown-content">
+      <a href="accordian.html">Cars</a>
+      <a href="bikeinfo.html">Bikes</a>
+      <a href="carbikename.html">Search and Buy</a>
+	  <a href="Service.html">Service</a>
+    </div>
+
+  </li>
+</ul>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+
+button.accordion.active,
+button.accordion:hover {
+
+    background-color: #ddd;
+}
+
+
+button.accordion:after {
+
+/* Unicode character for "plus" sign
+(+) is '\02795' */ 
+
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+
+button.accordion.active:after {
+
+/* Unicode character for "minus" sign
+(-) is '\2796' */ 
+
+    content: "\2796";
+}
+
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Cars Model</h2>
+
+<p>HERE IS THE DESCRIPTION OF CARS</p>
+
+
+<button class="accordion">Ferrari Portofino
+</button>
+
+<div class="panel">
+
+<p>The Ferrari Portofino replaces the California T to become the most affordable car you can buy from the Ferrari lineup. What is possible the most beautiful production car in the world, the Ferrari Portofino is a hard top convertible with a metal folding roof that is powered by a front mounted twin-turbo V8 engine. The Ferrari Portofino is priced in India at Rs 3.5 Crore (ex-showroom) before considering options and extras of which there are plenty to choose from. The Ferrari Portofino does not have any direct rivals in India apart from the likes of the upcoming Bentley Continental GT convertible and the luxurious Rolls Royce Dawn.</p>
+
+</div>
+
+<button class="accordion">BMW Z4</button>
+<div class="panel">
+
+<p>The much anticipated car from the BMW stable is finally in India. Yes, the Z4 Roadster is back into the country and prices start at Rs. 64.90 lakh. There are two variants on offer the sDrive20i and the M40i; the latter of which costs Rs. 78.90 lakh (ex-showroom India). The all-new offering bring back the Z4 nameplate to India and has been developed in collaboration with Toyota. In fact, the new Z4 shares its engine with the all-new Toyota Supra that was revealed last year. The BMW convertible comes as a Completely Built Unit (CBU) and bookings are open at the automaker's dealerships pan India. The all-new BMW Z4 M40i is the sportiest model combining the elegance of a roadster and the athleticism of an M automobile. Some striking individual touches can be added to the BMW Z4 sDrive20i by opting for the Sport Line or M Sport package. The Sport Line Package impresses with its sportier appearance whereas M Sport model gives the vehicle a more dynamic touch.
+</p>
+
+</div>
+
+<button class="accordion">Lamborghini Aventador
+</button>
+<div class="panel">
+
+<p>The super car from Lamborghini-Aventador is about to receive a mid-life facelift. To be named Lamborghini Aventador S, the facelift version will first be launched in European markets followed by launch in India sometime next year. Delving into the changes the supercar will receive, subtle updates will be made to the exterior with face getting a sportier treatment and additional styling updates made to the rear. In addition to aforementioned changes, the supercar will get a bump in power, making 40hp more power than the preceding model. 
+Coming to the engine on the 2017 Lamborghini Aventador S, the supercar uses the LP 740-4 petrol engine with 6.5 litre capacity. As mentioned above, the V12 unit will not be tuned to deliver 40hp more power at 730bhp, however the torque remains unchanged at 690Nm. For transmitting power, it will use the 7-speed ISR gearbox directing power to rear wheels. With the power bumped up by 40hp, the sports car will effortlessly sprint to 100km/h from rest within 2.9 seconds while attaining a top speed of 350km/h.
+</p>
+
+</div>
+<button class="accordion">Jaguar XJ
+</button>
+
+<div class="panel">
+
+<p>Jaguar XJ is the flagship luxurious saloon from the British marque in India. It positions itself in a niche segment where very few such cars are available in India. Power is sourced from petrol and diesel units with an option for an automatic transmission. It has brilliant exterior, luxurious interior and advanced features that make it a perfect model for the elite class.
+
+The new Jaguar XJ was launched at a price of Rs 98.03 lakh (ex-showroom, pre-octroi in Mumbai) at the 13th Auto Expo. The saloon has received styling updates, additional kit and is claimed to deliver improved performance over the previous model. Under the skin, it gets an option between 2.0 litre petrol and 3.0 litre diesel engines that are paired to a standard automatic transmission. </p>
+
+</div>
+
+<button class="accordion">MG Hector
+</button>
+
+<div class="panel">
+
+<p>The MG Hector has been finally launched in India and it is offered in four variants- Style, Super, Smart and Sharp and of course it is the first connected car in its segment. The company has kick started operations with 120 centres for the convenience of its customers. This figure will go up to 250 in September. The connected car tech remains the magnum opus and it packs-in the best of connected car tech Indian customers have seen so far. The vertically-mounted 10.4-inch screen comes with pre-loaded entertainment content and allows you to manage complete vehicle settings and some more. The system offers features like - Real-Time Navigation, Remote Location, Geo-Fencing, Emergency Response and Indian accented voice assist for a plethora of features. The software is updated via over-the-air (OTA) downloads like firmware and features updates like any updates. The MG Hector also comes with pre-loaded apps like - TomTom IQ Maps, Gaana Premium, and AccuWeather app among others. The system also comes with a first machine-to-machine embedded sim, along with the SUV Internet Protocol version 6 which makes it 5G-ready. The e-Sim will be provided by Airtel and MG Motor will give internet connectivity for free until the SUV is under warranty period. That said, the MG Hector SUV oozes in the features department as well and scores really well with plenty upmarket features. It gets a panoramic sunroof, premium sound system by Infinity, Electronic Stability Program (ESP), Hill Assist, cruise control, MID, powered seats and wing mirrors and powered tailgate among others.</p>
+
+</div>
+
+
+<script>
+
+var acc = document.getElementsByClassName("accordion");
+
+var i;
+
+for (i = 0; i < acc.length; i++) {
+ acc[i].onclick = function(){
+  this.classList.toggle("active");
+  this.nextElementSibling.classList.toggle("show");
+  }
+}
+
+</script>
+
+</body>
+</html>

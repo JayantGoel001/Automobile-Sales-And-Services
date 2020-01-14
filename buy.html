@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+body {
+    -webkit-animation: colorchange 15s infinite; 
+    animation: colorchange 15s infinite;
+}
+@-webkit-keyframes colorchange {
+     0%  {background: RED;}
+    25%  {background: Green;}
+    50%  {background: Yellow;}
+    75%  {background: Cyan;}
+    100% {background: Blue;}
+}
+@keyframes colorchange {
+     0%  {background: Red;}
+    25%  {background: Green;}
+    50%  {background: Yellow;}
+    75%  {background: Cyan;}
+    100% {background: Blue;}
+}  
+</style>
+</head>
+<body>
+<h1 align="center">PAYMENT GATEWAY </h1>
+<hr align="center" width="500"><br><br>
+<form name ="loginForm" action="buyCars.php" method="post">
+ First name:
+  <input type="text" name="fname" placeholder="Sachin" Required><br><br>
+Middle name:
+  <input type="text" name="mname" placeholder="Ramesh" ><br><br>
+  Last name:
+  <input type="text" name="lname" placeholder="Tendulkar" Required><br><br>
+address:
+  <input type="text" name="add" placeholder="10880 Malibu Point" Required><br><br>
+phone no:
+  <input type="text" name="phone" placeholder="9876543210" Required><br><br>
+E-Mail:
+  <input type="text" name="email" placeholder="Username@gmail.com" Required><br><br>
+Card Number:
+  <input type="text" name="cn" placeholder="5467-8907-1234" Required><br><br>
+CVV Number:
+  <input type="password" name="cvv" Required><br><br>
+PIN:
+  <input type="password" name="pin" Required><br><br>
+Name of car or bike:
+  <input type="text" name="nocb" Required><br><br>
+<input type="submit" name="Submit" value="submit">
+<input type="reset">
+</form>
+</body>
+</html>
